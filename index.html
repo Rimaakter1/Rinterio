@@ -46,25 +46,12 @@
     <!-- header starts here  -->
     <header class="w-11/12 mx-auto bg-gradient-to-r from-[#ffffffc3] to-[#ffffffa1]">
         <nav>
-            <div class="navbar">
+            <div class="navbar p-0 py-4">
                 <div class="navbar-start">
-                    <div class="dropdown">
-                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-                                stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M4 6h16M4 12h8m-8 6h16" />
-                            </svg>
-                        </div>
-                        <ul tabindex="0"
-                            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-                            <li><a>Item 1</a></li>
-                            <li><a>Item 3</a></li>
-                        </ul>
-                    </div>
+
                     <div class="flex items-center gap-2 ">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                            stroke="currentColor" class="size-10 bg-color-bg p-2 rounded-full">
+                            stroke="currentColor" class="size-10 text-black bg-color-bg mt-2 p-2 rounded-full">
                             <path stroke-linecap="round" stroke-linejoin="round"
                                 d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
                         </svg>
@@ -90,25 +77,50 @@
                                 hover:font-extrabold">Contact Us</a></li>
                     </ul>
                 </div>
-                <div class="navbar-end flex items-center gap-2">
-                    <div class="text-accent ">
-                        <i class="fa-solid fa-magnifying-glass bg-gray-200 rounded-full p-3 border border-gray-400"></i>
+                <div class="navbar-end ">
+                    <div class="items-center gap-4 hidden md:flex">
+                        <div class="text-accent">
+                            <i
+                                class="fa-solid fa-magnifying-glass bg-white rounded-full p-3 border border-gray-100 text-accent"></i>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-cart-shopping bg-white border 
+                            border-gray-100 rounded-full p-3 text-accent"></i>
+                        </div>
+                        <div>
+                            <a class="btn text-font_bg_color bg-color-bg text-lg font-extrabold rounded-3xl">Book
+                                Consult <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor"
+                                    class="size-8  bg-font_bg_color text-white rounded-full p-2">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                                </svg>
+                            </a>
+                        </div>
                     </div>
-                    <div>
-                        <i class="fa-solid fa-cart-shopping bg-gray-200 border 
-                        border-gray-400 rounded-full p-3"></i>
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn pr-0 btn-ghost lg:hidden">
+                            <i
+                                class="fa-solid fa-bars text-2xl bg-white rounded-full px-3.5 py-2 border border-gray-100 text-accent"></i>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-48 gap-4 right-0 shadow  text-accent">
+                            <li
+                                class="hover:text-font_secondary transition-colors ease-in-out duration-500 hover:font-extrabold">
+                                <a class="">Home</a>
+                            </li>
+                            <li><a
+                                    class="hover:text-font_secondary transition-colors ease-in-out duration-500 hover:font-extrabold">Services</a>
+                            </li>
+                            <li><a class="hover:text-font_secondary transition-colors ease-in-out duration-500
+                                hover:font-extrabold">Portfolio</a></li>
+                            <li><a
+                                    class="hover:text-font_secondary transition-colors ease-in-out duration-500 hover:font-extrabold">Blogs</a>
+                            </li>
+                            <li><a class="hover:text-font_secondary transition-colors ease-in-out duration-500
+                                hover:font-extrabold">Contact Us</a></li>
+                        </ul>
                     </div>
-                    <div>
-                        <a class="btn text-font_bg_color bg-color-bg text-lg font-extrabold rounded-3xl">Book
-                            Consult <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                stroke-width="1.5" stroke="currentColor"
-                                class="size-8  bg-font_bg_color text-white rounded-full p-2">
-                                <path stroke-linecap="round" stroke-linejoin="round"
-                                    d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
-                            </svg>
-                        </a>
-                    </div>
-
                 </div>
             </div>
         </nav>
