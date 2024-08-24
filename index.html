@@ -26,14 +26,17 @@
                 extend: {
                     colors: {
                         primary: '#212121',
-                        'font_secondary': '#494949',
+                        font_secondary: '#494949',
                         accent: '#737373',
-                        'body': '#F4F4F4',
+                        body: '#F4F4F4',
                         'color-bg': '#ABEF5F',
-                        'font_bg_color': '#1C1C1C',
+                        font_bg_color: '#1C1C1C',
                     },
                     fontFamily: {
                         Manrope: 'Manrope'
+                    },
+                    backgroundImage: {
+                        aboutBg: "url('./images/about-bg.png')",
                     }
                 }
             }
@@ -41,11 +44,13 @@
     </script>
 </head>
 
-<body>
+<body class="font-Manrope">
 
     <!-- header starts here  -->
-    <header class="w-11/12 mx-auto bg-gradient-to-r from-[#ffffffc3] to-[#ffffffa1]">
-        <nav>
+    <header class="bg-gradient-to-r from-[#ffffffc3] to-[#ffffffa1]">
+
+        <!-- navbar starts here  -->
+        <nav class="w-11/12 mx-auto">
             <div class="navbar p-0 py-4">
                 <div class="navbar-start">
 
@@ -55,10 +60,11 @@
                             <path stroke-linecap="round" stroke-linejoin="round"
                                 d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
                         </svg>
-
                         <a class="text-3xl font-extrabold" href="#">Rinterio</a>
                     </div>
                 </div>
+
+                <!-- navbar menu  -->
                 <div class="navbar-center hidden lg:flex">
                     <ul class="menu menu-horizontal px-1 text-accent">
                         <li
@@ -98,6 +104,8 @@
                             </a>
                         </div>
                     </div>
+
+                    <!-- dropdown menu  -->
                     <div class="dropdown">
                         <div tabindex="0" role="button" class="btn pr-0 btn-ghost lg:hidden">
                             <i
@@ -124,12 +132,76 @@
                 </div>
             </div>
         </nav>
+        <!-- navbar ends here  -->
+
+        <!-- banner section starts here  -->
+        <section class="w-11/12 mx-auto flex flex-col items-center mt-4 md:mt-12">
+
+            <!-- banner image  -->
+            <div>
+                <img class="w-full h-full" src="images/banner.png" alt="">
+            </div>
+
+            <!-- text content  -->
+            <div class="text-center">
+                <h1 class="text-2xl md:text-4xl lg:text-6xl text-primary font-extrabold my-6">A barn house of this
+                    design has a
+                    striking
+                    appearance
+                </h1>
+                <p class="mb-7 w-full md:w-9/12 mx-auto text-font_secondary font-medium text-sm md:text-[16px]">A modern
+                    barn house
+                    with
+                    striking rustic
+                    elegance,
+                    featuring bold,
+                    angular lines
+                    and
+                    expansive
+                    windows, blending natural materials with contemporary design for a unique and timeless appeal.</p>
+                <button
+                    class="btn rounded-[32px] text-primary text-xl font-bold bg-color-bg bg-opacity-50 border border-color-bg">View
+                    Details
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="size-8 bg-color-bg text-font_bg_color rounded-full p-2">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                    </svg></button>
+            </div>
+        </section>
+        <!-- banner section ends here  -->
+
     </header>
 
     <!-- header ends here  -->
 
     <!-- main starts here  -->
     <main>
+        <!-- About us section starts here  -->
+        <section class="bg-gray-100 mt-32">
+            <div class="w-11/12 mx-auto grid grid-cols-1 lg:grid-cols-2 py-16">
+
+                <div>
+                    <div>
+                        <img src="images/about-bg.png" alt="">
+                    </div>
+                    <div class="flex items-center bg-white rounded-3xl font-bold">
+                        <i class="fa-solid fa-arrow-right"></i>
+                        <p>About Us</p>
+                    </div>
+                    <h2>We design thoughtful, liveable spaces</h2>
+                    <p>The barn house captivates with its blend of rustic charm and
+                        modern sophistication, featuring weathered wood, sleek metal accents.</p>
+                </div>
+
+
+                <div>
+                    <img src="images/about-img.png" alt="">
+                </div>
+            </div>
+        </section>
+
+        <!-- About us section ends here  -->
 
     </main>
     <!-- main ends here  -->
