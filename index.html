@@ -26,10 +26,10 @@
                 extend: {
                     colors: {
                         primary: '#212121',
-                        font_secondary: '#494949',
+                        secondary: '#494949',
                         accent: '#737373',
                         body: '#F4F4F4',
-                        'color-bg': '#ABEF5F',
+                        color_bg: '#ABEF5F',
                         font_bg_color: '#1C1C1C',
                     },
                     fontFamily: {
@@ -56,7 +56,7 @@
 
                     <div class="flex items-center gap-2 ">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                            stroke="currentColor" class="size-10 text-black bg-color-bg mt-2 p-2 rounded-full">
+                            stroke="currentColor" class="size-10 text-black bg-color_bg mt-2 p-2 rounded-full">
                             <path stroke-linecap="round" stroke-linejoin="round"
                                 d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
                         </svg>
@@ -68,18 +68,18 @@
                 <div class="navbar-center hidden lg:flex">
                     <ul class="menu menu-horizontal px-1 text-accent">
                         <li
-                            class="hover:text-font_secondary transition-colors ease-in-out duration-500 hover:font-extrabold">
+                            class="hover:text-secondary transition-colors ease-in-out duration-500 hover:font-extrabold">
                             <a class="">Home</a>
                         </li>
                         <li><a
-                                class="hover:text-font_secondary transition-colors ease-in-out duration-500 hover:font-extrabold">Services</a>
+                                class="hover:text-secondary transition-colors ease-in-out duration-500 hover:font-extrabold">Services</a>
                         </li>
-                        <li><a class="hover:text-font_secondary transition-colors ease-in-out duration-500
+                        <li><a class="hover:text-secondary transition-colors ease-in-out duration-500
                                 hover:font-extrabold">Portfolio</a></li>
                         <li><a
-                                class="hover:text-font_secondary transition-colors ease-in-out duration-500 hover:font-extrabold">Blogs</a>
+                                class="hover:text-secondary transition-colors ease-in-out duration-500 hover:font-extrabold">Blogs</a>
                         </li>
-                        <li><a class="hover:text-font_secondary transition-colors ease-in-out duration-500
+                        <li><a class="hover:text-secondary transition-colors ease-in-out duration-500
                                 hover:font-extrabold">Contact Us</a></li>
                     </ul>
                 </div>
@@ -94,7 +94,7 @@
                             border-gray-100 rounded-full p-3 text-accent"></i>
                         </div>
                         <div>
-                            <a class="btn text-font_bg_color bg-color-bg text-lg font-extrabold rounded-3xl">Book
+                            <a class="btn text-font_bg_color bg-color_bg text-lg font-extrabold rounded-3xl">Book
                                 Consult <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                                     stroke-width="1.5" stroke="currentColor"
                                     class="size-8  bg-font_bg_color text-white rounded-full p-2">
@@ -114,18 +114,18 @@
                         <ul tabindex="0"
                             class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-48 gap-4 right-0 shadow  text-accent">
                             <li
-                                class="hover:text-font_secondary transition-colors ease-in-out duration-500 hover:font-extrabold">
+                                class="hover:text-secondary transition-colors ease-in-out duration-500 hover:font-extrabold">
                                 <a class="">Home</a>
                             </li>
                             <li><a
-                                    class="hover:text-font_secondary transition-colors ease-in-out duration-500 hover:font-extrabold">Services</a>
+                                    class="hover:text-secondary transition-colors ease-in-out duration-500 hover:font-extrabold">Services</a>
                             </li>
-                            <li><a class="hover:text-font_secondary transition-colors ease-in-out duration-500
+                            <li><a class="hover:text-secondary transition-colors ease-in-out duration-500
                                 hover:font-extrabold">Portfolio</a></li>
                             <li><a
-                                    class="hover:text-font_secondary transition-colors ease-in-out duration-500 hover:font-extrabold">Blogs</a>
+                                    class="hover:text-secondary transition-colors ease-in-out duration-500 hover:font-extrabold">Blogs</a>
                             </li>
-                            <li><a class="hover:text-font_secondary transition-colors ease-in-out duration-500
+                            <li><a class="hover:text-secondary transition-colors ease-in-out duration-500
                                 hover:font-extrabold">Contact Us</a></li>
                         </ul>
                     </div>
@@ -149,7 +149,7 @@
                     striking
                     appearance
                 </h1>
-                <p class="mb-7 w-full md:w-9/12 mx-auto text-font_secondary font-medium text-sm md:text-[16px]">A modern
+                <p class="mb-7 w-full md:w-9/12 mx-auto text-secondary font-medium text-sm md:text-[16px]">A modern
                     barn house
                     with
                     striking rustic
@@ -160,10 +160,10 @@
                     expansive
                     windows, blending natural materials with contemporary design for a unique and timeless appeal.</p>
                 <button
-                    class="btn rounded-[32px] text-primary text-xl font-bold bg-color-bg bg-opacity-50 border border-color-bg">View
+                    class="btn rounded-[32px] text-primary text-xl font-bold bg-color_bg bg-opacity-50 border border-color_bg w-full md:w-fit">View
                     Details
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                        stroke="currentColor" class="size-8 bg-color-bg text-font_bg_color rounded-full p-2">
+                        stroke="currentColor" class="size-8 bg-color_bg text-font_bg_color rounded-full p-2">
                         <path stroke-linecap="round" stroke-linejoin="round"
                             d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
                     </svg></button>
@@ -178,24 +178,55 @@
     <!-- main starts here  -->
     <main>
         <!-- About us section starts here  -->
-        <section class="bg-gray-100 mt-32">
-            <div class="w-11/12 mx-auto grid grid-cols-1 lg:grid-cols-2 py-16">
-
+        <section class="bg-gray-100 mt-10 md:mt-20 lg:mt-32">
+            <div class="w-11/12 mx-auto grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8 py-8 md:py-12 lg:py-16">
                 <div>
-                    <div>
+                    <div class="-ml-11 mb-2.5 hidden lg:block">
                         <img src="images/about-bg.png" alt="">
                     </div>
-                    <div class="flex items-center bg-white rounded-3xl font-bold">
-                        <i class="fa-solid fa-arrow-right"></i>
+                    <div
+                        class="flex items-center  bg-white rounded-3xl font-bold text-secondary text-lg py-2 px-4 gap-2 w-1/2 lg:w-1/4 mx-auto lg:mx-0 mb-3">
+                        <i class="fa-solid fa-arrow-right "></i>
                         <p>About Us</p>
                     </div>
-                    <h2>We design thoughtful, liveable spaces</h2>
-                    <p>The barn house captivates with its blend of rustic charm and
-                        modern sophistication, featuring weathered wood, sleek metal accents.</p>
+                    <div class="space-y-5 ">
+                        <h2 class="text-primary text-2xl md:text-4xl font-bold text-center lg:text-start">We design
+                            thoughtful, <br>
+                            liveable
+                            spaces</h2>
+                        <p class=" font-medium text-secondary text-center lg:text-start">The barn house captivates with
+                            its blend of
+                            rustic charm and
+                            modern sophistication, featuring weathered wood, sleek metal accents.</p>
+                        <div class="card card-side items-start md:items-center  bg-white pl-0 md:pl-2 lg:pl-8">
+                            <figure class="w-full md:w-fit mt-5 md:mt-0">
+                                <img class="w-14 lg:w-20 object-cover" src="images/commercial.png" alt="">
+                            </figure>
+                            <div class="card-body py-4 pl-0 pr-2 md:p-8">
+                                <h2 class="card-title font-extrabold text-xl text-secondary">Commercial</h2>
+                                <p class="text-accent font-medium w-full lg:w-9/12">The barn house captivates with its
+                                    blend of rustic
+                                    charm and
+                                    modern.</p>
+
+                            </div>
+                        </div>
+                        <div class="card card-side items-start md:items-center  bg-white pl-0 md:pl-2 lg:pl-8">
+                            <figure class="w-full md:w-fit mt-5 md:mt-0">
+                                <img class=" w-14 lg:w-20 object-cover" src="images/residential.png" alt="">
+                            </figure>
+                            <div class="card-body py-4 pl-0 pr-2 md:p-8">
+                                <h2 class="card-title font-extrabold text-xl text-secondary">Residential</h2>
+                                <p class="text-accent font-medium w-full lg:w-9/12">The barn house captivates with its
+                                    blend of rustic charm and modern.</p>
+
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
 
-                <div>
+                <div class="mt-0 lg:mt-11 ">
                     <img src="images/about-img.png" alt="">
                 </div>
             </div>
