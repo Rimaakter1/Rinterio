@@ -378,12 +378,14 @@
                 </div>
 
                 <!-- portfolio cards container  -->
-                <div class="grid grid-cols-12 gap-6 ">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 ">
 
                     <!-- portfolio card 1  -->
-                    <div class="card card-side border border-gray-200 col-span-8 ">
+                    <div
+                        class="card card-side border flex-col md:flex-row border-gray-200 col-span-full lg:col-span-8 ">
                         <figure class="w-full py-2">
-                            <img class="pl-6 w-full object-cover" src="images/portfolio-1.png" alt="Movie" />
+                            <img class="pl-6 pt-4 pr-6 md:pt-0 md:pr-0 w-full object-cover" src="images/portfolio-1.png"
+                                alt="Movie" />
                         </figure>
                         <div class="card-body ">
                             <h2 class="card-title text-2xl font-extrabold text-secondary ">Commercial</h2>
@@ -405,14 +407,15 @@
                     </div>
 
                     <!-- portfolio card 2  -->
-                    <div class="card bg-white w-full border border-gray-200 col-span-4 ">
+                    <div class="card bg-white w-full border border-gray-200 col-span-full  lg:col-span-4 ">
                         <figure class="w-full p-6">
                             <img class="w-full object-cover" src="images/portfolio-2.png" alt="Shoes"
                                 class="rounded-xl" />
                         </figure>
                     </div>
                     <!-- portfolio card 3  -->
-                    <div class="card bg-white w-full border border-gray-200 col-span-3 p-6">
+                    <div
+                        class="card bg-white w-full border border-gray-200 lg:col-span-3 px-6 py-5 col-span-full order-5">
                         <figure class="w-full h-full">
                             <img class="w-full object-cover" src="images/portfolio-3.png" alt="Shoes"
                                 class="rounded-xl" />
@@ -420,9 +423,11 @@
                     </div>
 
                     <!-- portfolio card 4  -->
-                    <div class="card card-side border border-gray-200 col-span-6">
+                    <div
+                        class="card card-side flex-col md:flex-row border border-gray-200 col-span-full  lg:col-span-6 order-4">
                         <figure class="w-full h-full">
-                            <img class="pl-6 w-full object-cover" src="images/portfolio-4.png" alt="Movie" />
+                            <img class="pl-6 pt-6 pr-6 md:pt-0 md:pr-0 w-full object-cover" src="images/portfolio-4.png"
+                                alt="Movie" />
                         </figure>
                         <div class="card-body p-6">
                             <h2 class="card-title text-2xl font-extrabold text-secondary ">Commercial</h2>
@@ -441,8 +446,18 @@
                     </div>
 
                     <!-- portfolio card 5  -->
-                    <div class="card bg-white w-full border border-gray-200 col-span-3">
-                        <figure class="w-full h-full px-6">
+                    <div
+                        class="card bg-white w-full border border-gray-200 col-span-full  lg:col-span-3  px-6 py-5 order-3">
+                        <figure class="w-full h-full ">
+                            <img class="w-full object-cover" src="images/portfolio-5.png" alt="Shoes"
+                                class="rounded-xl" />
+                        </figure>
+                    </div>
+
+                    <!-- portfolio card 6  -->
+                    <div
+                        class="card bg-white w-full border border-gray-200 col-span-full  lg:col-span-3  px-6 py-5 order-6 block md:hidden">
+                        <figure class="w-full h-full ">
                             <img class="w-full object-cover" src="images/portfolio-5.png" alt="Shoes"
                                 class="rounded-xl" />
                         </figure>
